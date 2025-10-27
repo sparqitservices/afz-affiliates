@@ -1,0 +1,37 @@
+/* app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #0052C9;
+  --color-accent: #FEEA3A;
+  --color-accent2: #ECBD34;
+  --color-dark: #212121;
+  --color-light: #F9F9F9;
+}
+
+html, body {
+  background: var(--color-light);
+  color: var(--color-dark);
+}
+
+a {
+  @apply text-brand-primary;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-lg bg-brand-primary px-4 py-2 font-medium text-white hover:bg-[#0046A9] transition;
+}
+.btn-ghost {
+  @apply inline-flex items-center justify-center rounded-lg border border-gray-300 bg-white px-4 py-2 text-gray-800 hover:bg-gray-50 transition;
+}
+.badge {
+  @apply inline-flex items-center gap-1 rounded-full bg-brand-accent/20 text-brand-primary px-3 py-1 text-xs font-semibold;
+}
+
+/* Light/dark helpers if needed later */
+.dark body {
+  background: #121212;
+  color: #EAEAEA;
+}
